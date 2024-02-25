@@ -114,7 +114,6 @@ modules:
       - >-
         -Deditor_args=[
         '/app/share/codium-insiders/resources/app/out/cli.js',
-        '--ms-enable-electron-run-as-node',
         '--extensions-dir', '$XDG_DATA_HOME/codium-insiders/extensions'
         ]
       - -Dprogram_name=codium-insiders
