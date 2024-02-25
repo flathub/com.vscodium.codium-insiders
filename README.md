@@ -5,15 +5,22 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium-insider
 
 ## FAQ
 
-Note that VSCodium Insiders is granted *full access to your host directories*.
-You can use `flatpak override` to locally adjust this if you prefer to sandbox VSCodium Insiders file system access:
-```
+### About the access to the host filesystem
+Note that VSCodium Insiders is granted *full access to your host directories*
+[(but at certain grade is still sandboxed)](https://docs.flatpak.org/en/latest/sandbox-permissions.html#filesystem-access).
+
+You can use `flatpak override` to locally adjust this if you prefer to a more strong
+hardened sandbox for VSCodium Insiders file system access:
+```bash
 flatpak override --user com.vscodium.codium-insiders --nofilesystem=host
-# now manually grant accesss to the folder(s) you want to work in
+```
+
+Now manually grant accesss to the folder(s) you want to work in
+```bash
 flatpak override --user com.vscodium.codium-insiders --filesystem=~/src
 ```
 
-This version is running inside a _container_ and is therefore __not able__
+> Remember: this version is running inside a _container_ and is therefore __not able__
 to access SDKs on your host system!
 
 ### To execute commands on the host system, run inside the sandbox:
