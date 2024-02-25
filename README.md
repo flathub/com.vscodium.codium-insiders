@@ -95,6 +95,17 @@ $ codium /path/to/
 # or
 $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
 ```
+
+### Git LFS support
+
+To use Git LFS with VSCodium's integrated Git support, you will need the `com.visualstudio.code.tool.git-lfs` addon.
+
+```bash
+  $ flatpak install flathub com.visualstudio.code.tool.git-lfs
+```
+
+You might need to reinstall the Git LFS hooks in each repo with `git lfs install`.
+
 ## Related Documentation
 
 - https://github.com/VSCodium/vscodium/blob/master/DOCS.md
