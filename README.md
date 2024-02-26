@@ -11,10 +11,10 @@ commands and try again
 
 ```bash
 # Only disable wayland to force fallback on xwayland
-flatpak override --user --nosocket=wayland com.vscodium.codium
+flatpak override --user --nosocket=wayland com.vscodium.codium-insiders
 # or
 # Disable wayland and enable X11
-flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium
+flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium-insiders
 ```
 
 Is also recommended to run `flatpak permission-reset com.vscodium.codium`
