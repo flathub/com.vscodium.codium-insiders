@@ -67,8 +67,7 @@ modules:
         url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.86.2.24052-insider/codium-insiders_1.86.2.24052_amd64.deb
         sha256: 539b57affa988dd26c7c60d85223d0b8e1c9f0c1ab1d980d64587f748760c9ad
         dest-filename: codium.deb
-        only-arches:
-          - x86_64
+        only-arches: [ x86_64 ]
         x-checker-data:
           type: json
           url: https://api.github.com/repos/VSCodium/vscodium-insiders/releases/latest
@@ -81,8 +80,7 @@ modules:
         url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.86.2.24052-insider/codium-insiders_1.86.2.24052_arm64.deb
         sha256: c1b7701e0eb1b5512352458aad401d08fba9f2ce1714234e33daab2a1403be0d
         dest-filename: codium.deb
-        only-arches:
-          - aarch64
+        only-arches: [ aarch64 ]
         x-checker-data:
           type: json
           url: https://api.github.com/repos/VSCodium/vscodium-insiders/releases/latest
@@ -108,6 +106,35 @@ modules:
       - type: git
         url: https://github.com/refi64/zypak.git
         commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
+  - name: host-spawn
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 host-spawn /app/bin/host-spawn
+    sources:
+      - type: file
+        url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-x86_64
+        sha256: dbf67e7e111c4fe1edb0c642cbb4193064ca5b384aeb1054fc2befba6ed88b83
+        dest-filename: host-spawn
+        only-arches: [x86_64]
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/1player/host-spawn/releases/latest
+          tag-query: .tag_name
+          version-query: .tag_name
+          timestamp-query: .published_at
+          url-query: '[.assets[] | select(.name|test(".+x86_64$"))][0] | .browser_download_url'
+      - type: file
+        url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-aarch64
+        sha256: c42c12be6cdd83e374b847bec836659fb45231215797777c9ee1c9c0ae9e3783
+        dest-filename: host-spawn
+        only-arches: [aarch64]
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/1player/host-spawn/releases/latest
+          tag-query: .tag_name
+          version-query: .tag_name
+          timestamp-query: .published_at
+          url-query: '[.assets[] | select(.name|test(".+aarch64$"))][0] | .browser_download_url'
   - name: ide-flatpak-wrapper
     buildsystem: meson
     config-opts:
