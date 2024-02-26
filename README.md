@@ -5,6 +5,20 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium-insider
 
 ## FAQ
 
+### Wayland vs X11
+If you have problems to start this flatpak under X11 please run one of these two
+commands and try again
+
+```bash
+# Only disable wayland to force fallback on xwayland
+flatpak override --user --nosocket=wayland com.vscodium.codium
+# or
+# Disable wayland and enable X11
+flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium
+```
+
+Is also recommended to run `flatpak permission-reset com.vscodium.codium`
+
 ### About the access to the host filesystem
 Note that VSCodium Insiders is granted *full access to your host directories*
 [(but at certain grade is still sandboxed)](https://docs.flatpak.org/en/latest/sandbox-permissions.html#filesystem-access).
