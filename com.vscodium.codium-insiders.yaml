@@ -40,7 +40,7 @@ modules:
   - name: codium-insiders
     buildsystem: simple
     build-commands:
-      - install -Dm644 codium-insiders.svg /app/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
+      - install -Dm644 code.svg /app/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
       - install -Dm644 $FLATPAK_ID.metainfo.xml -t /app/share/metainfo
       - ar x codium.deb
       - tar xf data.tar.xz
@@ -64,8 +64,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.86.2.24052-insider/codium-insiders_1.86.2.24052_amd64.deb
-        sha256: 539b57affa988dd26c7c60d85223d0b8e1c9f0c1ab1d980d64587f748760c9ad
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.87.0.24058-insider/codium-insiders_1.87.0.24058_amd64.deb
+        sha256: 42224bbb4d0a231e530f3960cc0b684d8b97192ae8579931568181ec27a8e524
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
@@ -77,8 +77,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium-insiders_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.86.2.24052-insider/codium-insiders_1.86.2.24052_arm64.deb
-        sha256: c1b7701e0eb1b5512352458aad401d08fba9f2ce1714234e33daab2a1403be0d
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.87.0.24058-insider/codium-insiders_1.87.0.24058_arm64.deb
+        sha256: 1705a59698081e03656ce83a6e60dea0109e0a51cf2f628fd9b67ff5a4002736
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
@@ -90,9 +90,7 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium-insiders_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://raw.githubusercontent.com/VSCodium/vscodium/f1fa60db6d5332bef6cb2fad55b809a48b76179c/icons/insider/codium_cnl.svg
-        sha256: 0cc2ded6ad8109c59bdfad9ef71c0afda0e6d5d6a26aaf03eac5d4a8a92fa4e5
-        dest-filename: codium-insiders.svg
+        path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium-insiders.metainfo.xml
       - type: file
