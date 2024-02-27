@@ -40,7 +40,7 @@ modules:
   - name: codium-insiders
     buildsystem: simple
     build-commands:
-      - install -Dm644 codium-insiders.svg /app/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
+      - install -Dm644 code.svg /app/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
       - install -Dm644 $FLATPAK_ID.metainfo.xml -t /app/share/metainfo
       - ar x codium.deb
       - tar xf data.tar.xz
@@ -90,9 +90,7 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium-insiders_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://raw.githubusercontent.com/VSCodium/vscodium/f1fa60db6d5332bef6cb2fad55b809a48b76179c/icons/insider/codium_cnl.svg
-        sha256: 0cc2ded6ad8109c59bdfad9ef71c0afda0e6d5d6a26aaf03eac5d4a8a92fa4e5
-        dest-filename: codium-insiders.svg
+        path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium-insiders.metainfo.xml
       - type: file
