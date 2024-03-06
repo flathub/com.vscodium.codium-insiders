@@ -13,6 +13,10 @@
     <p>VSCodium Insiders combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
     <p>This is the telemetry-less version of Visual Studio Code, packaged into a Flatpak. This repackaging is not supported by Microsoft.</p>
   </description>
+  <branding>
+    <color type="primary" scheme_preference="light">#ffedda</color>
+    <color type="primary" scheme_preference="dark">#e57200</color>
+  </branding>
   <screenshots>
     <screenshot type="default">
       <image>https://vscodium.com/img/vscodium.png</image>
