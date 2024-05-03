@@ -110,8 +110,8 @@ modules:
       - install -Dm755 host-spawn /app/bin/host-spawn
     sources:
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.5.1/host-spawn-x86_64
-        sha256: 107160808e99223d0335f1b45cbfe9cb3b45a9fb8d9658493902554dd54d4335
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-x86_64
+        sha256: 75159f0d3924a0bd6d230c6414d19ad44609b5a16671db6624681c910f9bb4ff
         dest-filename: host-spawn
         only-arches: [x86_64]
         x-checker-data:
@@ -122,8 +122,8 @@ modules:
           timestamp-query: .published_at
           url-query: '[.assets[] | select(.name|test(".+x86_64$"))][0] | .browser_download_url'
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.5.1/host-spawn-aarch64
-        sha256: 675a71c540333d92faf42290c619679af9eff1548a3edc9ed5536d125d42099b
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-aarch64
+        sha256: 00f9617c139b9447e6c453a27602ca87f28cdac3aa62b04dcb38d215b2758165
         dest-filename: host-spawn
         only-arches: [aarch64]
         x-checker-data:
