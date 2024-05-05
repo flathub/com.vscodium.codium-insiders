@@ -37,7 +37,6 @@ cleanup:
   - /share/gtk-doc
   - '*.la'
 modules:
-  - shared-modules/libsecret/libsecret.json
   - shared-modules/libusb/libusb.json
   - name: codium-insiders
     buildsystem: simple
