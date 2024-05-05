@@ -100,11 +100,6 @@ modules:
         path: patches/codium-insiders.desktop.patch
       - type: file
         path: patches/codium-insiders-url-handler.desktop.patch
-  - name: zypak
-    sources:
-      - type: git
-        url: https://github.com/refi64/zypak.git
-        commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
   - name: host-spawn
     buildsystem: simple
     build-commands:
