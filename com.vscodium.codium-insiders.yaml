@@ -142,7 +142,7 @@ modules:
         '--extensions-dir', '$XDG_DATA_HOME/codium-insiders/extensions'
         ]
       - -Dprogram_name=codium-insiders
-      - -Deditor_title=VSCodium Insiders
+      - -Deditor_title=VSCodium - Insiders
       - -Dzypak=enabled
       - -Dzypak_args=[ 'host', '-' ]
       - >-
