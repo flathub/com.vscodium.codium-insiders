@@ -1,5 +1,3 @@
---- a/usr/share/codium-insiders/resources/app/product.json
-+++ b/usr/share/codium-insiders/resources/app/product.json
 @@ -289,7 +289,7 @@
    },
    "commit": "0fd8f4dc87384b7352db56bd74f3af6b2180394d",

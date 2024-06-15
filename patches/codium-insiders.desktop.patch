@@ -1,5 +1,3 @@
---- a/usr/share/applications/codium-insiders.desktop
-+++ b/usr/share/applications/codium-insiders.desktop
 @@ -2,8 +2,8 @@
  Name=VSCodium - Insiders
  Comment=Code Editing. Redefined.
