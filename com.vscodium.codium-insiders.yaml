@@ -54,6 +54,7 @@ modules:
       - mv usr/share/codium-insiders /app/share
         # use patch because desktop-file-edit can't modify different group keys
       - patch -u usr/share/applications/codium-insiders.desktop -i codium-insiders.desktop.patch
+        # this patch set the correct `desktopName` on wayland sessions
       - patch -u usr/share/applications/codium-insiders-url-handler.desktop -i codium-insiders-url-handler.desktop.patch
         # use install instead of desktop-file-install because can't rename the output file
       - install -Dm644 usr/share/applications/codium-insiders.desktop /app/share/applications/$FLATPAK_ID.desktop
