@@ -47,7 +47,7 @@ modules:
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - find usr/share/codium-insiders -type f -print0 | xargs -0 sed -i "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
+      - patch --fuzz=3 usr/share/codium-insiders/resources/app/extensions/git/dist/main.js -i main.js.patch
         # this patch set the correct `desktopName` on wayland sessions
       - patch --fuzz=3 usr/share/codium-insiders/resources/app/package.json -i package.json.patch
       - mv usr/share/codium-insiders /app/share
@@ -65,8 +65,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.93.0.24242-insider/codium-insiders_1.93.0.24242_amd64.deb
-        sha256: ca94fcacd8adde2052c3f45354fa742607388af3e289b1460b1fad3839a094ed
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.95.0.24287-insider/codium-insiders_1.95.0.24287_amd64.deb
+        sha256: 7daa9b5f9c3c722016aa48d8df22dc6ec3d77d10d03f1f548558a413a6bb0b90
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
@@ -78,8 +78,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium-insiders_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.93.0.24242-insider/codium-insiders_1.93.0.24242_arm64.deb
-        sha256: 4c7f2a28911a7ee7066e178cdec675bf05428ca77406e1cb0c60b0467b4f6620
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.95.0.24287-insider/codium-insiders_1.95.0.24287_arm64.deb
+        sha256: 775a868666cd750565330450203bb6a1c90e30b7883593d40c6157f4c806e589
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
@@ -94,6 +94,8 @@ modules:
         path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium-insiders.metainfo.xml
+      - type: file
+        path: patches/main.js.patch
       - type: file
         path: patches/package.json.patch
       - type: file
