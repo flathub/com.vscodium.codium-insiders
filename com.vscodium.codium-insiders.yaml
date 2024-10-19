@@ -47,7 +47,8 @@ modules:
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - patch --fuzz=3 usr/share/codium-insiders/resources/app/extensions/git/dist/main.js -i main.js.patch
+      - patch --fuzz=3 usr/share/codium-insiders/resources/app/extensions/git/dist/main.js
+        -i main.js.patch
         # this patch set the correct `desktopName` on wayland sessions
       - patch --fuzz=3 usr/share/codium-insiders/resources/app/package.json -i package.json.patch
       - mv usr/share/codium-insiders /app/share
@@ -65,8 +66,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.95.0.24287-insider/codium-insiders_1.95.0.24287_amd64.deb
-        sha256: 7daa9b5f9c3c722016aa48d8df22dc6ec3d77d10d03f1f548558a413a6bb0b90
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.95.0.24293-insider/codium-insiders_1.95.0.24293_amd64.deb
+        sha256: edb83dccb96f6d2fafd3b999b407003b24b625028af48a86cb91193542f44b09
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
@@ -78,8 +79,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium-insiders_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.95.0.24287-insider/codium-insiders_1.95.0.24287_arm64.deb
-        sha256: 775a868666cd750565330450203bb6a1c90e30b7883593d40c6157f4c806e589
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.95.0.24293-insider/codium-insiders_1.95.0.24293_arm64.deb
+        sha256: b8f39295b8a9b8be2ff6e5131a3f3216408badf673a0f632f090a022a62ef9ca
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
