@@ -45,10 +45,6 @@ modules:
       - install -Dm644 $FLATPAK_ID.metainfo.xml -t /app/share/metainfo
       - ar x codium.deb
       - tar xf data.tar.xz
-        # HACK: Use directory for IPC sockets that is shared between Flatpak instances
-        # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - patch --fuzz=3 usr/share/codium-insiders/resources/app/extensions/git/dist/main.js
-        -i main.js.patch
         # this patch set the correct `desktopName` on wayland sessions
       - patch --fuzz=3 usr/share/codium-insiders/resources/app/package.json -i package.json.patch
       - mv usr/share/codium-insiders /app/share
