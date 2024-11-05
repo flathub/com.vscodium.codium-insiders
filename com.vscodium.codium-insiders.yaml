@@ -92,8 +92,6 @@ modules:
       - type: file
         path: com.vscodium.codium-insiders.metainfo.xml
       - type: file
-        path: patches/main.js.patch
-      - type: file
         path: patches/package.json.patch
       - type: file
         path: patches/codium-insiders.desktop.patch
