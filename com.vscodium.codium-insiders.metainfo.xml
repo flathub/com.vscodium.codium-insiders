@@ -4,7 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>VSCodium - Insiders</name>
-  <developer_name>Peter Squicciarini</developer_name>
+  <developer_name>The VSCodium team</developer_name>
   <url type="homepage">https://vscodium.com/</url>
   <url type="bugtracker">https://github.com/flathub/com.vscodium.codium-insiders/issues</url>
   <url type="help">https://github.com/VSCodium/vscodium/blob/master/DOCS.md</url>
