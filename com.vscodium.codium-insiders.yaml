@@ -140,8 +140,8 @@ modules:
           timestamp-query: .published_at
           url-query: '[.assets[] | select(.name|test(".+x86_64$"))][0] | .browser_download_url'
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-aarch64
-        sha256: 00f9617c139b9447e6c453a27602ca87f28cdac3aa62b04dcb38d215b2758165
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.1/host-spawn-aarch64
+        sha256: 71b7744a4d0b29279523cc0f0ed1a7af5e9555510bd9e6d4685391b59faefaac
         dest-filename: host-spawn
         only-arches: [aarch64]
         x-checker-data:
