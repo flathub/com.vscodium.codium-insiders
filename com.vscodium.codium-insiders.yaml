@@ -56,8 +56,8 @@ modules:
       - /share/man
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz
-        sha256: 163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20
+        url: https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.5.tar.xz
+        sha256: 08f45c44760ab4c2d6febd6e0eeb421663b29a72be52c48c61c507b0ef6a7920
         x-checker-data:
           type: gnome
           name: libsecret
@@ -128,8 +128,8 @@ modules:
       - install -Dm755 host-spawn /app/bin/host-spawn
     sources:
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-x86_64
-        sha256: 75159f0d3924a0bd6d230c6414d19ad44609b5a16671db6624681c910f9bb4ff
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.1/host-spawn-x86_64
+        sha256: 733746ab498e07d065cbecf80bacd447eb21846d1462e8fe23fdd9d9dc977b50
         dest-filename: host-spawn
         only-arches: [x86_64]
         x-checker-data:
@@ -140,8 +140,8 @@ modules:
           timestamp-query: .published_at
           url-query: '[.assets[] | select(.name|test(".+x86_64$"))][0] | .browser_download_url'
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-aarch64
-        sha256: 00f9617c139b9447e6c453a27602ca87f28cdac3aa62b04dcb38d215b2758165
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.1/host-spawn-aarch64
+        sha256: 71b7744a4d0b29279523cc0f0ed1a7af5e9555510bd9e6d4685391b59faefaac
         dest-filename: host-spawn
         only-arches: [aarch64]
         x-checker-data:
