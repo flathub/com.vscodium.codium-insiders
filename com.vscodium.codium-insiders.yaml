@@ -178,8 +178,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
-        branch: zypak
-        commit: ea2cf2d69d4f95f886170417af3a50a9c6c88e2f
+        commit: c26e15940a02b40603ea57b0ac76b4944bee5464
       - type: file
         path: README.md
       - type: file
