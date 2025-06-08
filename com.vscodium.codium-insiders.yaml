@@ -86,8 +86,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.101.03543-insider/codium-insiders_1.101.03543_amd64.deb
-        sha256: 4efdaa4b365211a5f657fd645e9b9a41847d445ad109d52a05963453f52802c0
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.101.03583-insider/codium-insiders_1.101.03583_amd64.deb
+        sha256: 327599b5bbd381a8a85458b562033c0b0ee257e05620606cf40b982f509809f6
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
