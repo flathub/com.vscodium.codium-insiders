@@ -99,8 +99,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium-insiders_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.101.03543-insider/codium-insiders_1.101.03543_arm64.deb
-        sha256: 29e3dfa35ea44f971bfc8523d8148219e284a56f229eeb49e8f13e8c5dfc4402
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.101.03583-insider/codium-insiders_1.101.03583_arm64.deb
+        sha256: 9316cacca1ce8cd8d7a975bbd8d3f8ec3cff248c0417ea157bdb5042035a37f1
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
