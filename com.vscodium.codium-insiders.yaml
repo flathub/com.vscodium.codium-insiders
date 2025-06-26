@@ -96,8 +96,7 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test("codium-insiders_.+_amd64.deb$"))][0]
-            | .browser_download_url'
+          url-query: '.assets[] | select(.name|test("codium-insiders_.+_amd64.deb$")).browser_download_url'
       - type: file
         url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.101.03919-insider/codium-insiders_1.101.03919_arm64.deb
         sha256: 9264af9765839317d5dbabde9314cdc83966af963999a3b4843669f2b791e591
@@ -109,8 +108,7 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test("codium-insiders_.+_arm64.deb$"))][0]
-            | .browser_download_url'
+          url-query: '.assets[] | select(.name|test("codium-insiders_.+_arm64.deb$")).browser_download_url'
       - type: file
         url: https://raw.githubusercontent.com/VSCodium/vscodium/refs/heads/insider/src/insider/resources/linux/code.svg
         sha256: ed7c05df676522c7a1922bcff2185bedb9364801b78072b325014b0a26865c53
@@ -138,7 +136,7 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test(".+x86_64$"))][0] | .browser_download_url'
+          url-query: '.assets[] | select(.name|test(".+x86_64$")).browser_download_url'
       - type: file
         url: https://github.com/1player/host-spawn/releases/download/v1.6.1/host-spawn-aarch64
         sha256: 71b7744a4d0b29279523cc0f0ed1a7af5e9555510bd9e6d4685391b59faefaac
@@ -150,7 +148,7 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test(".+aarch64$"))][0] | .browser_download_url'
+          url-query: '.assets[] | select(.name|test(".+aarch64$")).browser_download_url'
   - name: ide-flatpak-wrapper
     buildsystem: meson
     config-opts:
