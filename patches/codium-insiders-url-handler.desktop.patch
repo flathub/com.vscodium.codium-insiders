@@ -4,7 +4,7 @@
  GenericName=Text Editor
 -Exec=/usr/share/codium-insiders/codium-insiders --open-url %U
 -Icon=vscodium-insiders
-+Exec=codium-insiders --open-url %U
++Exec=com.vscodium.codium-insiders --open-url %U
 +Icon=com.vscodium.codium-insiders
  Type=Application
  NoDisplay=true

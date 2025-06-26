@@ -4,7 +4,7 @@
  GenericName=Text Editor
 -Exec=/usr/share/codium-insiders/codium-insiders %F
 -Icon=vscodium-insiders
-+Exec=codium-insiders %F
++Exec=com.vscodium.codium-insiders %F
 +Icon=com.vscodium.codium-insiders
  Type=Application
  StartupNotify=false
@@ -15,5 +15,5 @@
  Name[zh_TW]=開新空視窗
 -Exec=/usr/share/codium-insiders/codium-insiders --new-window %F
 -Icon=vscodium-insiders
-+Exec=codium-insiders --new-window %F
++Exec=com.vscodium.codium-insiders --new-window %F
 +Icon=com.vscodium.codium-insiders
