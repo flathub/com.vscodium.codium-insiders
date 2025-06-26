@@ -158,7 +158,7 @@ modules:
         '/app/share/codium-insiders/resources/app/out/cli.js',
         '--extensions-dir', '$XDG_DATA_HOME/codium-insiders/extensions'
         ]
-      - -Dprogram_name=codium-insiders
+      - -Dprogram_name=com.vscodium.codium-insiders
       - -Deditor_title=VSCodium - Insiders
       - -Dzypak=enabled
       - -Dzypak_args=[ 'host', '-' ]
