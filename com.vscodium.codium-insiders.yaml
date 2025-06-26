@@ -72,6 +72,7 @@ modules:
         # this patch set the correct `desktopName` on wayland sessions
       - patch --fuzz=3 usr/share/codium-insiders/resources/app/package.json -i package.json.patch
       - mv usr/share/codium-insiders /app/share
+      - mv /app/share/codium-insiders/codium-insiders /app/share/codium-insiders/$FLATPAK_ID
         # use patch because desktop-file-edit can't modify different group keys
       - patch -u usr/share/applications/codium-insiders.desktop -i codium-insiders.desktop.patch
       - patch -u usr/share/applications/codium-insiders-url-handler.desktop -i codium-insiders-url-handler.desktop.patch
@@ -152,7 +153,7 @@ modules:
   - name: ide-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/share/codium-insiders/codium-insiders
+      - -Deditor_binary=/app/share/codium-insiders/com.vscodium.codium-insiders
       - >-
         -Deditor_args=[
         '/app/share/codium-insiders/resources/app/out/cli.js',
