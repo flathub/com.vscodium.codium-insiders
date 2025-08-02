@@ -87,8 +87,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.102.04522-insider/codium-insiders_1.102.04522_amd64.deb
-        sha256: 28fa87b7759e6435de6d71fda7b1a8870992d214d51e6f2f0f923c28da4aec6d
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.103.05143-insider/codium-insiders_1.103.05143_amd64.deb
+        sha256: 58da24e8d0681ee2da4912deca65514d4d1b3fb95e6a07a95e08d016a26718c7
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
@@ -99,8 +99,8 @@ modules:
           timestamp-query: .published_at
           url-query: .assets[] | select(.name|test("codium-insiders_.+_amd64.deb$")).browser_download_url
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.102.04522-insider/codium-insiders_1.102.04522_arm64.deb
-        sha256: e8c7a61a23b5a9bcfa6215640fbd9809cb3818a6c05cd48d245fadbf44984609
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.103.05143-insider/codium-insiders_1.103.05143_arm64.deb
+        sha256: 860ddf9affa46e8170c8d2ec1492f6b7e1bae651f536779229d36f5105172264
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
@@ -127,8 +127,8 @@ modules:
       - install -Dm755 host-spawn /app/bin/host-spawn
     sources:
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.1/host-spawn-x86_64
-        sha256: 733746ab498e07d065cbecf80bacd447eb21846d1462e8fe23fdd9d9dc977b50
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.2/host-spawn-x86_64
+        sha256: 077bc09a087292447ba17cfe2156a93f71bf56c4c6be8e38d3abe65c1240f34c
         dest-filename: host-spawn
         only-arches: [x86_64]
         x-checker-data:
@@ -139,8 +139,8 @@ modules:
           timestamp-query: .published_at
           url-query: .assets[] | select(.name|test(".+x86_64$")).browser_download_url
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.1/host-spawn-aarch64
-        sha256: 71b7744a4d0b29279523cc0f0ed1a7af5e9555510bd9e6d4685391b59faefaac
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.2/host-spawn-aarch64
+        sha256: 8b30215b0b6b66c8c34a3e22d372dd39020295cd0904608bc2c5f5ecff829e5f
         dest-filename: host-spawn
         only-arches: [aarch64]
         x-checker-data:
