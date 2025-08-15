@@ -87,8 +87,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.103.05215-insider/codium-insiders_1.103.05215_amd64.deb
-        sha256: c314bdbf33441134d4eb38fe4f1fb76a6f23d304d38d75611a176e7c6306cd52
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.104.05446-insider/codium-insiders_1.104.05446_amd64.deb
+        sha256: b0a77b0b82b3b0d2ac66f632cf8463b42c4a9d6bc12cbc4746095defa8f0b473
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
@@ -99,8 +99,8 @@ modules:
           timestamp-query: .published_at
           url-query: .assets[] | select(.name|test("codium-insiders_.+_amd64.deb$")).browser_download_url
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.103.05215-insider/codium-insiders_1.103.05215_arm64.deb
-        sha256: b4b6cf7bb7b979811af0c38ba11bd5472e155bead9f2d62703b80901bd0ad2d8
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.104.05446-insider/codium-insiders_1.104.05446_arm64.deb
+        sha256: b29e92f01767e492241d4dbf570a41f7dccd71e3e3a96714be4919b69214ca78
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
