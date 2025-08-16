@@ -30,6 +30,12 @@
   <releases>
     <release version="1.104.05455-insider" date="2025-08-15" urgency="low">
       <description>
+        <p>update vscode to 0ab18bd00955d2a3d69eb66d8eea982b76a53780</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.104.05460-insider</url>
+    </release>
+    <release version="1.104.05455-insider" date="2025-08-15" urgency="low">
+      <description>
         <p>update vscode to 308b0746d15cdcfc6ee123c13fa902495edec2d5</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.104.05455-insider</url>
