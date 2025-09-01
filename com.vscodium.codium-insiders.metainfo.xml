@@ -28,6 +28,12 @@
   <launchable type="desktop-id">com.vscodium.codium-insiders.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.104.05841-insider" date="2025-08-31" urgency="low">
+      <description>
+        <p>update vscode to 70e7eae7709159b57b503df2541e0cb2e7b66c92</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.104.05841-insider</url>
+    </release>
     <release version="1.104.05532-insider" date="2025-08-18" urgency="low">
       <description>
         <p>update vscode to 09401e712d4ffa5e497787978fe90c1557a0092b</p>
