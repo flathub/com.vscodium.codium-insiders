@@ -39,30 +39,6 @@ cleanup:
   - /share/gtk-doc
   - '*.la'
 modules:
-  # fix libsecret under flatpak
-  # https://github.com/flathub/org.signal.Signal/pull/756/commits/2caf105b18f906e7707f67b3cf7384a21f461564
-  - name: libsecret
-    buildsystem: meson
-    config-opts:
-      - -Dmanpage=false
-      - -Dcrypto=disabled
-      - -Dvapi=false
-      - -Dgtk_doc=false
-      - -Dintrospection=false
-      - -Dbash_completion=disabled
-    cleanup:
-      - /bin
-      - /include
-      - /lib/pkgconfig
-      - /share/man
-    sources:
-      - type: archive
-        url: https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz
-        sha256: 6b452e4750590a2b5617adc40026f28d2f4903de15f1250e1d1c40bfd68ed55e
-        x-checker-data:
-          type: gnome
-          name: libsecret
-          stable-only: true
   - name: host-spawn
     buildsystem: simple
     build-options:
@@ -100,6 +76,7 @@ modules:
         tag: v0.15.0
     build-commands:
       - go install -mod=vendor -ldflags "-X main.Version=$(git describe --tags)"
+      
   - name: codium-insiders
     buildsystem: simple
     build-commands:
@@ -159,6 +136,7 @@ modules:
         path: patches/codium-insiders.desktop.patch
       - type: file
         path: patches/codium-insiders-url-handler.desktop.patch
+        
   - name: ide-flatpak-wrapper
     buildsystem: meson
     config-opts:
