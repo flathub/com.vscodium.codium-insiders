@@ -8,7 +8,7 @@
     <name>The VSCodium team</name>x
   </developer>
   <url type="homepage">https://vscodium.com</url>
-  <url type="bugtracker">https://github.com/VSCodium/vscodium/issues</url>
+  <url type="bugtracker">https://github.com/flathub/com.vscodium.codium-insiders/issues</url>
   <url type="help">https://github.com/VSCodium/vscodium/blob/master/docs/index.md</url>
   <url type="vcs-browser">https://github.com/VSCodium/vscodium</url>
   <summary>Telemetry-less code editing</summary>
