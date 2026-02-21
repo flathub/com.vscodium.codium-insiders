@@ -5,7 +5,7 @@
   <project_license>MIT</project_license>
   <name>VSCodium - Insiders</name>
   <developer id="com.vscodium">
-    <name>The VSCodium team</name>x
+    <name>The VSCodium team</name>
   </developer>
   <url type="homepage">https://vscodium.com</url>
   <url type="bugtracker">https://github.com/flathub/com.vscodium.codium-insiders/issues</url>
