@@ -76,7 +76,7 @@ modules:
         tag: v0.15.0
     build-commands:
       - go install -mod=vendor -ldflags "-X main.Version=$(git describe --tags)"
-      
+
   - name: codium-insiders
     buildsystem: simple
     build-commands:
@@ -102,8 +102,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.109.00974-insider/codium-insiders_1.109.00974_amd64.deb
-        sha256: 1d932d6bf80509e6dddaa06aedc999372b1fc647eae4557fe7195d82e09ba8af
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.110.01172-insider/codium-insiders_1.110.01172_amd64.deb
+        sha256: 048be5a4a313a481d710ca1a64b2075bc858aebeca41da788a6469dc06d61ec3
         dest-filename: codium.deb
         only-arches: [x86_64]
         x-checker-data:
@@ -114,8 +114,8 @@ modules:
           timestamp-query: .published_at
           url-query: .assets[] | select(.name|test("codium-insiders_.+_amd64.deb$")).browser_download_url
       - type: file
-        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.109.00974-insider/codium-insiders_1.109.00974_arm64.deb
-        sha256: d8e0b66a6db93045d362b85f4a22ad81783dfc64451b0fc6978f5b6c6971b8ae
+        url: https://github.com/VSCodium/vscodium-insiders/releases/download/1.110.01172-insider/codium-insiders_1.110.01172_arm64.deb
+        sha256: 7a1d087596f32f3662f0b336bb93fffbc62a7d5a7f6d08f4a9be4b9f255330c3
         dest-filename: codium.deb
         only-arches: [aarch64]
         x-checker-data:
@@ -136,7 +136,7 @@ modules:
         path: patches/codium-insiders.desktop.patch
       - type: file
         path: patches/codium-insiders-url-handler.desktop.patch
-        
+
   - name: ide-flatpak-wrapper
     buildsystem: meson
     config-opts:
