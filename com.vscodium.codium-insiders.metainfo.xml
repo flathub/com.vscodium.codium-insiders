@@ -33,103 +33,103 @@
   <releases>
     <release version="1.112.01855-insider" date="2026-03-18" urgency="low">
       <description>
-        <p>update vscode to 07ff9d6178ede9a1bd12ad3399074d726ebe6e43</p>
+        <p>Update vscode to 07ff9d6178ede9a1bd12ad3399074d726ebe6e43</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.112.01855-insider</url>
     </release>
     <release version="1.110.01537-insider" date="2026-03-05" urgency="low">
       <description>
-        <p>update vscode to 0870c2a0c7c0564e7631bfed2675573a94ba4455</p>
+        <p>Update vscode to 0870c2a0c7c0564e7631bfed2675573a94ba4455</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.110.01537-insider</url>
     </release>
     <release version="1.110.01433-insider" date="2026-02-28" urgency="low">
       <description>
-        <p>update vscode to f5927e727c69039d3037f018f1790ebbbee596bc</p>
+        <p>Update vscode to f5927e727c69039d3037f018f1790ebbbee596bc</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.110.01433-insider</url>
     </release>
     <release version="1.110.01423-insider" date="2026-02-28" urgency="low">
       <description>
-        <p>update vscode to f5927e727c69039d3037f018f1790ebbbee596bc</p>
+        <p>Update vscode to f5927e727c69039d3037f018f1790ebbbee596bc</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.110.01423-insider</url>
     </release>
     <release version="1.110.01416-insider" date="2026-02-28" urgency="low">
       <description>
-        <p>update vscode to 37f39645643438347f1b5077abdaa96e7297fa7c</p>
+        <p>Update vscode to 37f39645643438347f1b5077abdaa96e7297fa7c</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.110.01416-insider</url>
     </release>
     <release version="1.110.01381-insider" date="2026-02-26" urgency="low">
       <description>
-        <p>update vscode to 547a36e89fec78f3c1a33302cdd7d8d8143cb09e</p>
+        <p>Update vscode to 547a36e89fec78f3c1a33302cdd7d8d8143cb09e</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.110.01381-insider</url>
     </release>
     <release version="1.110.01172-insider" date="2026-02-17" urgency="low">
       <description>
-        <p>update vscode to 547a36e89fec78f3c1a33302cdd7d8d8143cb09e</p>
+        <p>Update vscode to 547a36e89fec78f3c1a33302cdd7d8d8143cb09e</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.110.01172-insider</url>
     </release>
     <release version="1.109.00974-insider" date="2026-02-09" urgency="low">
       <description>
-        <p>update vscode to bdd88df003631aaa0bcbe057cb0a940b80a476fa</p>
+        <p>Update vscode to bdd88df003631aaa0bcbe057cb0a940b80a476fa</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.109.00974-insider</url>
     </release>
     <release version="1.108.00347-insider" date="2026-01-14" urgency="low">
       <description>
-        <p>update vscode to 94e8ae2b28cb5cc932b86e1070569c4463565c37</p>
+        <p>Update vscode to 94e8ae2b28cb5cc932b86e1070569c4463565c37</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.108.00347-insider</url>
     </release>
     <release version="1.107.18537-insider" date="2025-12-21" urgency="low">
       <description>
-        <p>update vscode to 994fd12f8d3a5aa16f17d42c041e5809167e845a</p>
+        <p>Update vscode to 994fd12f8d3a5aa16f17d42c041e5809167e845a</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.107.18537-insider</url>
     </release>
     <release version="1.107.18532-insider" date="2025-12-21" urgency="low">
       <description>
-        <p>update vscode to 994fd12f8d3a5aa16f17d42c041e5809167e845a</p>
+        <p>Update vscode to 994fd12f8d3a5aa16f17d42c041e5809167e845a</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.107.18532-inBot, buildsider</url>
     </release>
     <release version="1.107.18481-insider" date="2025-12-18" urgency="low">
       <description>
-        <p>update vscode to 994fd12f8d3a5aa16f17d42c041e5809167e845a</p>
+        <p>Update vscode to 994fd12f8d3a5aa16f17d42c041e5809167e845a</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.107.18481-insider</url>
     </release>
     <release version="1.107.08447-insider" date="2025-12-18" urgency="low">
       <description>
-        <p>update vscode to a44beb9c392505cf7897ad5a20c5b83d26537fd1</p>
+        <p>Update vscode to a44beb9c392505cf7897ad5a20c5b83d26537fd1</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.107.08447-insider</url>
     </release>
     <release version="1.106.07591-insider" date="2025-11-12" urgency="low">
       <description>
-        <p>update vscode to ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57</p>
+        <p>Update vscode to ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.106.07591-insider</url>
     </release>
     <release version="1.106.07567-insider" date="2025-11-11" urgency="low">
       <description>
-        <p>update vscode to c5a35b4aa508a6dfe4687bee2c2e7f704506799a</p>
+        <p>Update vscode to c5a35b4aa508a6dfe4687bee2c2e7f704506799a</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.106.07567-insider</url>
     </release>
     <release version="1.106.07495-insider" date="2025-11-08" urgency="low">
       <description>
-        <p>update vscode to 48cdf17f0e856e1daca2ad2747814085a2453df0</p>
+        <p>Update vscode to 48cdf17f0e856e1daca2ad2747814085a2453df0</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.106.07495-insider</url>
     </release>
     <release version="1.106.07384-insider" date="2025-11-03" urgency="low">
       <description>
-        <p>update vscode to 13330e1420d478afab7ce453f6d1e307abf7412e</p>
+        <p>Update vscode to 13330e1420d478afab7ce453f6d1e307abf7412e</p>
       </description>
       <url>https://github.com/VSCodium/vscodium-insiders/releases/tag/1.106.07384-insider</url>
     </release>
