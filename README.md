@@ -5,6 +5,12 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium-insider
 
 ## FAQ
 
+### Runtime Updates
+
+It was decided that the runtime will be updated 3 months later after the release
+of it, this gives some time for the SDKs to also migrate to the latest runtime
+[see](https://github.com/flathub/com.vscodium.codium/issues/469).
+
 ### Wayland vs X11
 If you have problems to start this flatpak under X11 please run one of these two
 commands and try again
